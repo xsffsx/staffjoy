@@ -6,7 +6,7 @@ COPY third_party ./third_party
 
 WORKDIR '/build/myaccount'
 
-RUN npm install
+RUN npm install --unsafe-perm node-sass
 RUN npm rebuild node-sass
 RUN npm run build
 
